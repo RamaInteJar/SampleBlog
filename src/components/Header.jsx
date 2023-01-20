@@ -1,10 +1,11 @@
 import React from "react";
 import tower from "../asset/tower.jpeg"
+import {Link} from "react-router-dom"
 
 const Header = () => {
   return (
     <section class="overflow-hidden">
-      <div class="flex items-center justify-between px- xl:px-14 py-5 bg-slate-500">
+      <div class="flex items-center justify-between px- xl:px-14 py-5 bg-gray-200">
         <div className="inline-flex">
           <img
             src={tower}
@@ -17,6 +18,11 @@ const Header = () => {
           <div class="flex flex-wrap items-center">
             <div class="w-auto hidden lg:block">
               <ul class="flex items-center mr-16">
+                <li class="mr-9 font-medium hover:text-gray-700">
+                <Link to="/">
+                  <span>Home</span>
+                </Link>
+                </li>
                 <li class="mr-9 font-medium hover:text-gray-700">
                   <span>Features</span>
                 </li>

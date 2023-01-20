@@ -6,12 +6,13 @@ import { BsChatDots } from "react-icons/bs";
 import {Link} from "react-router-dom"
 import { useState } from "react";
 import UserInput from "../components/UserInput";
-
+import supabase from "../utils/supabaseClient";
 const Posts = () => {
   const [isOpen, setIsOpen] = useState(false)
   const handleOpenModal = () => {
     setIsOpen(!isOpen)
   }
+  console.log(supabase)
   return (
     <>
       
